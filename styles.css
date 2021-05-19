@@ -1,0 +1,126 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Noto+Sans&display=swap");
+
+h2 {
+  color: white;
+  display: inline-block;
+  margin: 0;
+  font-size: 60px;
+}
+
+h2:hover {
+  animation: bounce; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+body {
+  background-image: url(planks.jpg);
+  font-family: "Indie Flower";
+  font-size: 18px;
+  line-height: 140%;
+  margin: 50px 16vw;
+  background-color: black;
+  background-size: cover;
+  background-repeat: none;
+}
+
+button,
+input[type="submit"] {
+  font-family: "Noto Sans";
+  padding: 5px 10px;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  border: 0;
+  border-radius: 10px;
+}
+
+.messages {
+  margin-top: 30px;
+  transition: all 1s ease-in-out;
+  
+}
+
+.message {
+  background-color: rgb(86, 201, 247);
+  width: 200px;
+  height: 185px;
+  padding: 35px 20px 20px 20px;
+  position: relative;
+  float: left;
+  margin: 20px 20px 0 0;
+  box-shadow: 15px 15px 25px 5px #000000;
+}
+
+.add-message {
+  float: right;
+}
+
+.remove-all-messages{
+  float:right;
+}
+
+.remove-form{
+  background-color: inherit;
+  border: 0;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  text-shadow: -1px -1px white, 1px -1px 0 white, -1px 1px 0 white,
+    1px 1px 0 white;
+}
+
+.remove-message {
+  background-color: inherit;
+  border: 0;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  text-shadow: -1px -1px white, 1px -1px 0 white, -1px 1px 0 white,
+    1px 1px 0 white;
+}
+
+.message-form {
+  position: absolute;
+  width: 50vw;
+  left: 25vw;
+  top: 100px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  display: none;
+}
+
+input[name="message"] {
+  display: block;
+  width: calc(100% - 25px);
+  border-radius: 5px;
+  font-family: "Noto Sans";
+  padding: 5px 10px;
+  line-height: 150%;
+}
+
+input[type="submit"] {
+  margin-top: 20px;
+  float: right;
+  border-style: solid;
+  border-width: 1px;
+}
+
+label {
+  font-family: "Noto Sans";
+}
+
+input[name="message"] {
+  margin-top: 20px;
+}
+
+/*
+button,class="add-message" {
+  border-style: solid;
+  border-width: 1px;
+  animation: bounce; 
+  animation-duration: 2s; 
+/*
